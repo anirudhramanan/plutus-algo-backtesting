@@ -2,7 +2,7 @@
 
 A python platform to backtest stocks using your own combination of strategies and technical indicators. 
 
-## Usage ?
+## Usage
 
 ````
 data_fetcher = YahooDataFetcher(symbol=config['symbol'], date_range=config['range'], interval=config['interval'])
@@ -15,7 +15,7 @@ Plutus takes in two arguments:
 
 <b>StockDataFetcher</b> : a class used to fetch stock data. By default, use YahooDataFetcher which uses yahoo finance to fetch stock data based on the configuration.
 
-<b>SignalStrategy</b> : This is where you define your buy and sell strategy. Implement the class and define your own strategy to buy and sell stocks. You can also specify the profit target and stop loss target
+<b>SignalStrategy</b> : This is where you define your buy and sell strategy. Implement the class and define your own strategy to buy and sell stocks. You can also specify the profit target and stop loss target.
 
 Let us understand this with an example : 
 
@@ -28,7 +28,7 @@ When you go long (ie where you buy the stock first and sell later) and your buy 
 <b>Checkout `plutus-demo.py` file for demo run</b>
 
 
-## Features ?
+## Features
 
 * Backtesting with your own custom strategy
 
@@ -41,7 +41,7 @@ When you go long (ie where you buy the stock first and sell later) and your buy 
 * Python3 support
 
 
-## Upcoming Features ?
+## Upcoming Features
 
 * Plotting stocks 
 
