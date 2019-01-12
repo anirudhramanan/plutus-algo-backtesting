@@ -1,7 +1,7 @@
-from backtest.helper.backtest_type import BackTestType
-from backtest.helper.profit_calc import ProfitTaxCalculator
-from backtest.network.stock_data_fetcher import StockDataFetcher
-from backtest.stratergy.signal_strategy import SignalStrategy
+from helper.backtest_type import BackTestType
+from helper.profit_calc import ProfitTaxCalculator
+from network.stock_data_fetcher import StockDataFetcher
+from stratergy.signal_strategy import SignalStrategy
 
 
 class Plutus:

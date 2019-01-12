@@ -1,6 +1,6 @@
 import pandas as pd
 
-from backtest.helper.yahoo_finance import fetch_stock_data
+from helper.yahoo_finance import fetch_stock_data
 
 
 class Portfolio:

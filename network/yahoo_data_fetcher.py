@@ -1,5 +1,5 @@
-from backtest.network.stock_data_fetcher import StockDataFetcher
-from backtest.helper.yahoo_finance import fetch
+from network.stock_data_fetcher import StockDataFetcher
+from helper.yahoo_finance import fetch
 
 """
 Default fetcher to fetch stocks from yahoo finance

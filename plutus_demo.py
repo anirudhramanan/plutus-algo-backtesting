@@ -1,14 +1,13 @@
-from backtest.plutus import Plutus
 import json
 import time
 import warnings
 
 import pandas as pd
 
-from backtest.helper.backtest_type import BackTestType
-from backtest.network.yahoo_data_fetcher import YahooDataFetcher
-from backtest.plutus import Plutus
-from backtest.stratergy.ma_crossover_strategy import MACrossoverStrategy
+from helper.backtest_type import BackTestType
+from network.yahoo_data_fetcher import YahooDataFetcher
+from plutus import Plutus
+from stratergy.ma_crossover_strategy import MACrossoverStrategy
 
 warnings.filterwarnings('ignore')
 
