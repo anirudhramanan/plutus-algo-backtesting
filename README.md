@@ -27,18 +27,24 @@ When you go long (ie where you buy the stock first and sell later) and your buy 
   
 <b>Checkout `plutus-demo.py` file for demo run</b>
 
+
 ## Features ?
 
 * Backtesting with your own custom strategy
 
 * Create wishlist stocks and run the test against them
 
+* Outputs profit / loss for each stock
+
 * Support for some technical indiactors
 
 * Python3 support
+
 
 ## Upcoming Features ?
 
 * Plotting stocks 
 
 * Adding more technical indicators
+
+More coming soon ...
