@@ -1,4 +1,4 @@
-from stratergy.signal_strategy import SignalStrategy
+from strategy.signal_strategy import SignalStrategy
 from indicators.trend_indicators import simple_moving_average
 
 """

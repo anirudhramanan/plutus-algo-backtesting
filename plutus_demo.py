@@ -7,7 +7,7 @@ import pandas as pd
 from helper.backtest_type import BackTestType
 from network.yahoo_data_fetcher import YahooDataFetcher
 from plutus import Plutus
-from stratergy.ma_crossover_strategy import MACrossoverStrategy
+from strategy.ma_crossover_strategy import MACrossoverStrategy
 
 warnings.filterwarnings('ignore')
 
