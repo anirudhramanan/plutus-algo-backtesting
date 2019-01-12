@@ -1,0 +1,6 @@
+kiteconnect
+numpy
+pandas
+requests
+arrow
+matplotlib

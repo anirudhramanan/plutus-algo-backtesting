@@ -1,0 +1,252 @@
+[
+  {
+    "symbol": "VEDL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "MARUTI",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "BPCL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "TATAMOTORS",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "ADANIPORTS",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "HINDALCO",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "INDUSINDBK",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "IOC",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "HINDPETRO",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "HEROMOTOCO",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "M&M",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "ULTRACEMCO",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "BAJAJFINSV",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "TATASTEEL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "HDFC",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "BHARTIARTL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "EICHERMOT",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "JSWSTEEL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "ASIANPAINT",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "BAJAJ-AUTO",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "AXISBANK",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "YESBANK",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "IBULHSGFIN",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "ITC",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "LT",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "UPL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "KOTAKBANK",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "HDFCBANK",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "HINDUNILVR",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "ONGC",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "TITAN",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "RELIANCE",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "GAIL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "POWERGRID",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "NTPC",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "COALINDIA",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "ICICIBANK",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "SUNPHARMA",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "INFRATEL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "GRASIM",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "SBIN",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "HCLTECH",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "INFY",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "TCS",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "BAJFINANCE",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "ZEEL",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "CIPLA",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "DRREDDY",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "WIPRO",
+    "range": 1,
+    "interval": "5m"
+  },
+  {
+    "symbol": "TECHM",
+    "range": 1,
+    "interval": "5m"
+  }
+]

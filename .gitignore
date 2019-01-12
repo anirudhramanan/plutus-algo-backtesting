@@ -1,0 +1,11 @@
+# Android/IntelliJ
+#
+build/
+.idea
+local.properties
+*.iml
+
+# csv files
+data/
+
+helper/string.py
