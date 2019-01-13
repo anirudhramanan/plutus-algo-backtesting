@@ -1,4 +1,4 @@
-# plutus-backtest
+<img src="https://github.com/anirudhramanan/plutus-backtest/blob/master/icon.png" width="250" height="80" />
 
 A python platform to backtest stocks using your own combination of strategies and technical indicators. 
 
