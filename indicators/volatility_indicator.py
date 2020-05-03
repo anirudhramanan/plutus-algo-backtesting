@@ -39,3 +39,14 @@ def bollinger_band(df, base, upper_target, lower_target, period):
 
     df = df.drop(['{}MA'.format(period), '{}STD'.format(period)], axis=1)
     return df
+
+
+def bollinger_bandwidth(df, base, upper_target, lower_target, target, period):
+    df['{}MA'.format(period)] = df[base].rolling(window=period).mean()
+    df['{}STD'.format(period)] = df[base].rolling(window=period).std()
+    df[upper_target] = df['{}MA'.format(period)] + (df['{}STD'.format(period)] * 2)
+    df[lower_target] = df['{}MA'.format(period)] - (df['{}STD'.format(period)] * 2)
+
+    df[target] = ((df[upper_target] - df[lower_target]) / df['{}MA'.format(period)]) * 100
+    df = df.drop(['{}MA'.format(period), '{}STD'.format(period)], axis=1)
+    return df
