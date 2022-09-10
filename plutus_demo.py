@@ -5,16 +5,16 @@ import warnings
 import pandas as pd
 
 from helper.backtest_type import BackTestType
-from network.yahoo_data_fetcher import YahooDataFetcher
+from network.kite_data_fetcher import KiteDataFetcher
 from plutus import Plutus
-from strategy.ma_crossover_strategy import MACrossoverStrategy
+from strategy.rsi_strategy import RSIStrategy
 
 warnings.filterwarnings('ignore')
 
 
 def call_strategy(config):
-    data_fetcher = YahooDataFetcher(symbol=config['symbol'], date_range=config['range'], interval=config['interval'])
-    strategy = MACrossoverStrategy()
+    data_fetcher = KiteDataFetcher(symbol=config['symbol'], date_range=config['range'], interval=config['interval'])
+    strategy = RSIStrategy()
     plutus = Plutus(stock_fetcher=data_fetcher, signal_strategy=strategy)
     plutus.backtest(BackTestType.SIGNAL_LONG)
     positions = plutus.calculate_profit(config['shares'])

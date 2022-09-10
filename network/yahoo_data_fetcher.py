@@ -1,5 +1,5 @@
-from network.stock_data_fetcher import StockDataFetcher
 from helper.yahoo_finance import fetch
+from network.stock_data_fetcher import StockDataFetcher
 
 """
 Default fetcher to fetch stocks from yahoo finance

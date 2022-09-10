@@ -1,5 +1,5 @@
-from strategy.signal_strategy import SignalStrategy
 from indicators.trend_indicators import simple_moving_average
+from strategy.signal_strategy import SignalStrategy
 
 """
 Strategy where the stock is bought / sold whenever the close price crosses the moving average

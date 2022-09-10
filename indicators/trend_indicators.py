@@ -1,3 +1,12 @@
+from ta.volume import volume_weighted_average_price
+
+
+def vwap(df, target):
+    df[target] = volume_weighted_average_price(df['High'], df['Low'], df['Close'], df['Volume'],
+                                               window=90, fillna=True)
+    return df
+
+
 def simple_moving_average(df, base, target, period):
     """
     Function to compute Simple Moving Average (SMA)

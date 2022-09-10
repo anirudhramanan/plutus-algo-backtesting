@@ -32,16 +32,19 @@ class Plutus:
                     if not buy_position:
                         self.stock_data.at[index, 'SIG_LONG'] = -1
                         buy_price = row['Close']
+                        print("Buying at: ", row["date"], "-", row["Close"])
                         buy_position = True
                         continue
 
                 target = buy_price + buy_price * self.signal_strategy.get_profit_target() / 100
                 stop_loss = buy_price - buy_price * self.signal_strategy.get_stop_loss_target() / 100
-                if row['Close'] > target or row['Close'] < stop_loss or self.signal_strategy.sell_signal(row):
+                if self.signal_strategy.sell_signal(row):
                     # we have a sell call, check there is a buy position
                     # which needs to be sold
                     if buy_position:
                         self.stock_data.at[index, 'SIG_SHORT'] = 1
+                        print("Selling at: ", row["date"], "-", row["Close"])
+                        print("----")
                         buy_position = False
 
         if type == BackTestType.SIGNAL_SHORT:
@@ -66,7 +69,7 @@ class Plutus:
                         self.stock_data.at[index, 'SIG_LONG'] = -1
                         sell_position = False
 
-        self.mark_exit_position_if_any()
+        # self.mark_exit_position_if_any()
 
     def number_of_buy_orders(self):
         if 'SIG_LONG' not in self.stock_data.columns:
@@ -85,12 +88,13 @@ class Plutus:
     # ---- PRIVATE METHODS ---- #
 
     def mark_exit_position_if_any(self):
-        for date, row in self.stock_data.iterrows():
-            if date.time().hour == 15 and date.time().minute == 25:
+        for i, row in self.stock_data.iterrows():
+            date = row["date"]
+            if date.hour == 15 and date.minute == 25:
                 # if it's 3.25 check for any open position for that day and close if necessary
-                day_stock_data = self.stock_data.loc[self.stock_data.index.to_series().dt.date == date.date()]
+                day_stock_data = self.stock_data.loc[self.stock_data.to_series()["row"].date() == date.date()]
                 position_sum = (day_stock_data['SIG_LONG'] + day_stock_data['SIG_SHORT']).sum()
                 if position_sum < 0:
-                    self.stock_data.at[date, 'SIG_SHORT'] = 1
+                    self.stock_data.at[i, 'SIG_SHORT'] = 1
                 elif position_sum > 0:
-                    self.stock_data.at[date, 'SIG_LONG'] = -1
+                    self.stock_data.at[i, 'SIG_LONG'] = -1

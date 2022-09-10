@@ -1,5 +1,8 @@
+ta
 numpy
 pandas
 requests
 arrow
 matplotlib
+selenium
+kiteconnect
